@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 
 
-public class soccer {
+public class Soccer {
 
     private Retrofit retrofit;
     private String token = "60b977cad1b24585972e41458f921372";
