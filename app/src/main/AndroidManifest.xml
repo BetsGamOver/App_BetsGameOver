@@ -14,7 +14,12 @@
         android:theme="@style/Theme.BetsGO"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".activitySidebar.userInfoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user_info"
+            android:theme="@style/Theme.BetsGO.NoActionBar" />
+        <activity
+            android:name=".activitySidebar.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

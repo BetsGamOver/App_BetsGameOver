@@ -1,8 +1,10 @@
-package edu.eci.ieti.betsgo;
+package edu.eci.ieti.betsgo.activitySidebar;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import edu.eci.ieti.betsgo.R;
 
 public class MainActivity extends AppCompatActivity {
 

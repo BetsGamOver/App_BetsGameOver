@@ -29,6 +29,9 @@ android {
         exclude 'META-INF/NOTICE.md'
         exclude 'META-INF/LICENSE.md'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -41,6 +44,8 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.5'
     //New
     implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
 
     //Test
     testImplementation 'junit:junit:4.13.2'
@@ -65,4 +70,7 @@ dependencies {
     implementation "com.google.dagger:dagger-android:2.35.1"
     annotationProcessor "com.google.dagger:dagger-android-processor:2.33"
 
+    //Stetho
+    implementation 'com.facebook.stetho:stetho:1.6.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.6.0'
 }
