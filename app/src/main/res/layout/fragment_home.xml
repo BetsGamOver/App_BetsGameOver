@@ -1,22 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activitySidebar.ui.home.HomeFragment">
 
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/soccer_bg"
+        android:layout_marginTop="45dp"
+        />
+
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/upperText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_alignBottom="@+id/avatarImage"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="494dp"
+        android:paddingBottom="30dp"
+        android:text="LIGAS"
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/leaguesGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/upperText"
+        android:layout_marginTop="-494dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="30dp"
+        app:columnCount="2"
+        app:rowCount="3"
+        >
+
+        <ImageButton
+            android:layout_marginRight="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="40dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bundesliga"
+            >
+        </ImageButton>
+        <ImageButton
+            android:layout_marginLeft="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/serie_a"
+            >
+        </ImageButton>
+
+        <ImageButton
+            android:layout_marginRight="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/laliga"
+            >
+        </ImageButton>
+        <ImageButton
+            android:layout_marginLeft="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/premierleague"
+            >
+        </ImageButton>
+
+        <ImageButton
+            android:layout_marginRight="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/championsleague"
+            >
+        </ImageButton>
+        <ImageButton
+            android:layout_marginLeft="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/europaleague"
+            >
+        </ImageButton>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</RelativeLayout>

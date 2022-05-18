@@ -46,6 +46,7 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
 
     //Test
     testImplementation 'junit:junit:4.13.2'
