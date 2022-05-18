@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import edu.eci.ieti.betsgo.R;
 import edu.eci.ieti.betsgo.databinding.ActivityUserInfoBinding;
 
-public class userInfoActivity extends AppCompatActivity {
+public class UserInfoActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityUserInfoBinding binding;
