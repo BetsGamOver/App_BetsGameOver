@@ -18,7 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiConfig {
 
-    public static final String baseUrlE = "http://10.0.2.2:9090";
+    public static final String baseUrlE = "http://192.168.0.14:8080";
     private static Retrofit retrofit;
     private static String token = "";
 
